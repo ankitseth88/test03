@@ -1,0 +1,71 @@
+Commands:
+
+1) git init: Initialize Local Repository 
+
+2) git log
+Error: fatal: your current branch 'master' does not have any commits yet
+
+3) git status (to Check Status of working tree )
+On branch master
+No commits yet
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        demo2_Steps_todo.txt
+        demo2_test1.txt
+        demo2_test2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+4) Initializing user and email
+git config --global user.email "ankitseth88@outlook.com"
+git config --global user.name "Ankit"
+
+5) git --add .
+(This will add all files to git)
+
+6) git status (to Check Status of working tree )
+On branch master
+No commits yet
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   demo2_Steps_todo.txt
+        new file:   demo2_test1.txt
+        new file:   demo2_test2.txt
+
+6) git commit -m "Commiting version 1"
+or
+git commit
+then use "a" for adding the comments and then "esc" key + ":wq!" to save it.
+
+7) git status
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   demo2_Steps_todo.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+8) git log
+$ git log
+commit b95ad1d19899bf13c2112b7f86f608826034250f (HEAD -> master)
+Author: Ankit <ankitseth88@outlook.com>
+Date:   Fri Feb 26 16:26:07 2021 +0100
+
+9) git remote add origin "https://github.com/ankitseth88/test2/"
+(# Sets the new remote)
+
+10) git remote -v
+(# Verifies the new remote URL)
+origin  https://github.com/ankitseth88/test2/ (fetch)
+origin  https://github.com/ankitseth88/test2/ (push)
+
+
+11) git push origin main
+(# Pushes the changes in your local repository up to the remote repository you specified)
+
+
+--------------------------------------
+https://github.com/ankitseth88/test1/
+
